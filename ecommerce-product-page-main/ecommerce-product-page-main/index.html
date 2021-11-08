@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+ 
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  
+  
+</head>
+<body>
+  <header>
+
+    <div class="head">
+    <div class="left">
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+    <nav>
+      <ul>
+        <li><a href="">Collections</a></li>
+        <li><a href="">Men</a></li>
+        <li><a href="">Women</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="right">
+    <div class="cart">
+      <a href=""><img src="images/icon-cart.svg" alt="Cart"></a>
+      
+    </div>
+    <div class="my-pro" >
+      <a href=""><img src="images/image-avatar.png" alt=""></a>
+    </div>
+  </div>
+    </div>
+  </header>
+  <div class="body">
+  <div id="left_body">
+    <div>
+      <div class="row">
+      <div class="column">
+        <img id="basic" src="images/image-product-1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/image-product-2.jpg" style="width:50%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/image-product-3.jpg" style="width:50%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/image-product-4.jpg" style="width:50%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/image-product-1.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/image-product-2.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/image-product-3.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/image-product-4.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+          <img class="demo cursor" src="images/image-product-1.jpg" style="width:100%" onclick="currentSlide(1)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/image-product-2.jpg" style="width:100%" onclick="currentSlide(2)" >
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/image-product-3.jpg" style="width:100%" onclick="currentSlide(3)" >
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/image-product-4.jpg" style="width:100%" onclick="currentSlide(4)" >
+        </div>
+      </div>
+    </div>
+      <div class="item2">
+        
+      </div>
+    </div>
+  </div>
+  <div id="left_body">
+  <div class="product-info">
+    <h5>Sneaker Company</h5>
+    <h1>Fall Limited Edition Sneakers</h1>
+    <p>
+      These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.
+    </p>
+    <div class="product-info--price">
+      <h3>$125.00</h3>
+      <h4>50%</h4>
+      <h5>$250.00</h5>
+    </div>
+    <div class="product-buy">
+      <div class="product-buy--select">
+        <img src="./images/icon-plus.svg" alt="icon-plus">
+        <p>0</p>
+        <img src="./images/icon-minus.svg" alt="icon-minus">
+      </div>
+      <div class="product-buy--btn">
+        <div>
+          <img src="./images/icon-cart.svg" alt="icon-cart">
+          <button id="btn" onclick="myFunction()">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="gallary.js">
+    function myFunction() {
+  alert("I am an alert box!");
+}
+  </script>
+</body>
+</html>
